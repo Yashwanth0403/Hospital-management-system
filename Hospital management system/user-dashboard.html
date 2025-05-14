@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Hospital Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>User Dashboard</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard Main Section -->
+    <section id="dashboard">
+        <h2>Welcome, User!</h2>
+        <p>Manage your appointments and communicate with our doctors easily.</p>
+
+        <!-- Appointment Booking Form -->
+        <div class="form-container">
+            <h3>Book an Appointment</h3>
+            <form action="#" method="POST">
+                <label for="doctor">Choose Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">--Select--</option>
+                    <option value="Dr. Smith">Dr. Smith</option>
+                    <option value="Dr. Jane">Dr. Jane</option>
+                    <option value="Dr. Kumar">Dr. Kumar</option>
+                </select>
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Appointment Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit" class="btn-primary">Book Now</button>
+            </form>
+        </div>
+
+        <!-- Message Sending Form -->
+        <div class="form-container">
+            <h3>Send a Message</h3>
+            <form action="#" method="POST">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+                <button type="submit" class="btn-secondary">Send Message</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hospital Management System | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

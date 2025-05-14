@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Hospital Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Admin Dashboard Main Section -->
+    <section id="dashboard">
+        <h2>Welcome, Admin!</h2>
+        <p>Manage appointments, doctors, users, and messages efficiently.</p>
+
+        <!-- Admin Actions -->
+        <div class="admin-actions">
+
+            <!-- View All Appointments -->
+            <div class="admin-card">
+                <h3>View All Appointments</h3>
+                <button class="btn-primary">View Appointments</button>
+            </div>
+
+            <!-- Manage Appointment Status -->
+            <div class="admin-card">
+                <h3>Manage Appointment Status</h3>
+                <button class="btn-secondary">Set Status</button>
+            </div>
+
+            <!-- View All Doctors -->
+            <div class="admin-card">
+                <h3>View All Doctors</h3>
+                <button class="btn-primary">View Doctors</button>
+            </div>
+
+            <!-- Add New Doctor -->
+            <div class="admin-card">
+                <h3>Add a New Doctor</h3>
+                <button class="btn-secondary">Add Doctor</button>
+            </div>
+
+            <!-- View All Messages -->
+            <div class="admin-card">
+                <h3>View Messages</h3>
+                <button class="btn-primary">View Messages</button>
+            </div>
+
+            <!-- Add New Admin -->
+            <div class="admin-card">
+                <h3>Add a New Admin</h3>
+                <button class="btn-secondary">Add Admin</button>
+            </div>
+
+        </div>
+
+        <!-- Appointments Table -->
+        <section id="appointments">
+            <h2>All Appointments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient Name</th>
+                        <th>Doctor</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Dr. Smith</td>
+                        <td>2025-05-01</td>
+                        <td>10:00 AM</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Roe</td>
+                        <td>Dr. Jane</td>
+                        <td>2025-05-02</td>
+                        <td>11:30 AM</td>
+                        <td>Accepted</td>
+                    </tr>
+                    <tr>
+                        <td>David Lee</td>
+                        <td>Dr. Kumar</td>
+                        <td>2025-05-03</td>
+                        <td>2:00 PM</td>
+                        <td>Rejected</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hospital Management System | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

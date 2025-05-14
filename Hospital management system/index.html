@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Typed.js for Typing Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1><i class="fas fa-hospital-symbol"></i> Hospital Management</h1>
+        </div>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="book-appointment.html">Book Appointment</a></li>
+                <li><a href="send-message.html">Send Message</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2><span id="typed-text"></span></h2>
+        <p>Manage Appointments, Doctors, and Patients Seamlessly</p>
+    </section>
+
+    <!-- Wave SVG Divider -->
+    <svg viewBox="0 0 1440 320" class="wave">
+        <path fill="#ffffff" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,122.7C384,128,480,192,576,224C672,256,768,256,864,234.7C960,213,1056,171,1152,138.7C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+
+    <!-- Main Content -->
+    <section class="admin-actions">
+        <div class="admin-card">
+            <h3>Register</h3>
+            <button class="btn-primary" onclick="location.href='register.html'">Register Now</button>
+        </div>
+        <div class="admin-card">
+            <h3>Login</h3>
+            <button class="btn-secondary" onclick="location.href='login.html'">Login Now</button>
+        </div>
+        <div class="admin-card">
+            <h3>Book Appointment</h3>
+            <button class="btn-primary" onclick="location.href='book-appointment.html'">Book Now</button>
+        </div>
+        <div class="admin-card">
+            <h3>Send Message</h3>
+            <button class="btn-secondary" onclick="location.href='send-message.html'">Send Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hospital Management System. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle-btn"></button>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

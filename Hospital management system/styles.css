@@ -1,0 +1,190 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: linear-gradient(-45deg, #e3f2fd, #bbdefb, #90caf9, #64b5f6);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+/* Dark and Light Theme */
+body.light-theme {
+    background: #ffffff;
+    color: #333;
+}
+
+body.dark-theme {
+    background: #333;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #00b4db, #0083b0);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Admin Actions */
+.admin-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 30px;
+}
+
+.admin-card {
+    background: white;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.admin-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.2);
+}
+
+.btn-primary, .btn-secondary {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #28a745, #218838);
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Animated Background */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Wave SVG */
+.wave {
+    display: block;
+    margin-top: -5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admin-actions {
+        flex-direction: column;
+    }
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle-btn:hover {
+    background-color: #555;
+}
+
+.theme-toggle-btn::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 10px auto;
+    transition: transform 0.3s;
+}
+
+body.dark-theme .theme-toggle-btn::after {
+    transform: translateX(25px);
+}

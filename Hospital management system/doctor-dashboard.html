@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - Hospital Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Doctor Dashboard</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Doctor Dashboard Main Section -->
+    <section id="dashboard">
+        <h2>Welcome, Doctor!</h2>
+        <p>Manage your appointments and patient communications.</p>
+
+        <!-- Doctor Actions -->
+        <div class="admin-actions">
+
+            <!-- View My Appointments -->
+            <div class="admin-card">
+                <h3>View My Appointments</h3>
+                <button class="btn-primary">View Appointments</button>
+            </div>
+
+            <!-- Manage Appointment Status -->
+            <div class="admin-card">
+                <h3>Manage Appointments</h3>
+                <button class="btn-secondary">Update Status</button>
+            </div>
+
+            <!-- View Messages -->
+            <div class="admin-card">
+                <h3>View Messages</h3>
+                <button class="btn-primary">View Messages</button>
+            </div>
+
+        </div>
+
+        <!-- Doctor Appointments Table -->
+        <section id="appointments">
+            <h2>My Appointments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>2025-05-01</td>
+                        <td>10:00 AM</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Parker</td>
+                        <td>2025-05-02</td>
+                        <td>1:00 PM</td>
+                        <td>Accepted</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hospital Management System | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
